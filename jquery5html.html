@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Examples 5</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+
+	<script>
+$(document).ready(function(){
+
+$("#button1").click(function(){
+    $("body").prepend("<p><b>Paragraf eklendi.</b></p>");
+});
+
+$("#button2").click(function(){
+    $("body").append("<p><b>Paragraf eklendi.</b></p>");
+});
+
+$("#button3").click(function(){
+    $("#kutu1").prepend("<p><b>Paragraf eklendi.</b></p>");
+});
+
+$("#button4").click(function(){
+    $("#kutu1").append("<p><b>Paragraf eklendi.</b></p>");
+});
+
+$("#button5").click(function(){
+    $("#listem").prepend("<li><b>Satır eklendi.</b></li>");
+});
+
+$("#button6").click(function(){
+    $("#listem").append("<li><b>Satır eklendi.</b></li>");
+});
+
+$("#button7").click(function(){
+    $("#kutu1").before("<u>Kutu1 öncesi</u>");
+	$("#kutu1").after("<u>Kutu1 sonrası</u>");
+});
+
+});
+</script>
+
+
+	<style type="text/css">
+		
+			td { padding: 5px; }
+			.kutu{ height:100px; width:150px; padding:5px; display:none;}
+			#kutu2{ background-color:#0F6;}
+	
+	</style>
+
+</head>
+<body>
+
+			<p>Burası 1. paragraf.</p>
+				<div id="kutu1" class="kutu">
+				  <p>Kutu1 1. paragraf.</p>
+				  <p>Kutu1 2. paragraf.</p>
+				  <p>Kutu1 3. paragraf.</p>
+				</div>
+				<ol id="listem">
+				  <li>Liste</li>
+				  <li>Liste</li>
+				  <li>Liste</li>
+				</ol>
+			<p>Burası son paragraf</p>
+
+			<p>
+	<button id="button1">En başa ekle</button>
+	<button id="button2">En sona ekle</button>
+	<button id="button3">Kutu1'in başına ekle</button>
+	<button id="button4">Kutu1'in sonuna ekle</button>
+	<button id="button5">Listenin başına ekle</button>
+	<button id="button6">Listenin sonuna ekle</button>
+	<button id="button7">Kutu1'den önce ve sonra paragraf ekle</button>
+		</p>
+
+		<p>Burası 1. paragraf.</p>
+<div id="kutu1" class="kutu">
+  <p>Kutu1 1. paragraf.</p>
+  <p>Kutu1 2. paragraf.</p>
+  <p>Kutu1 3. paragraf.</p>
+</div>
+<ol id="listem">
+  <li>Liste</li>
+  <li>Liste</li>
+  <li>Liste</li>
+</ol>
+<p>Burası son paragraf</p>
+
+
+	<form name="form1" method="POST" action="">
+		<input type="text" name="kutu12" id="kutu1" value="0">
+		<input type="button" name="button12" id="button1" value="Arttır">
+	</form>
+
+
+</body>
+</html>
