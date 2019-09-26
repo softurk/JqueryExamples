@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Examples 2</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<script>
+
+	$(document).ready(function() {
+
+
+			$("#b1").click(function() {
+				$(".metin1").toggle();
+			});
+
+			$("#b2").dblclick(function() {
+				$(".metin2").append("*");
+			});
+
+			$("#b3").mouseenter(function() {
+				$(".metin3").append("*");
+			});
+
+			$("#b4").mouseleave(function() {
+				$(".metin4").append("*");
+			});
+
+			$("#b5").click(function() {
+				$(".metin1").show();
+			});
+
+
+	});
+
+
+	</script>
+</head>
+<body>
+<table width="100%" border="1" cellspacing="0" cellpadding="5">
+	<tbody>
+	<tr>
+		<td> Olayın Adı ve Anlamı </td>
+		<td> Tetikleyici </td>
+		<td> Etkilenecek Öğeler </td>
+	</tr>
+
+	<tr>
+		<td> click - Tıklama </td>
+		<td> <button id=b1> Tıkla </button> </td>
+		<td>  <p class="metin1"> xz zx zx zx zx z ;</p> </td>
+	</tr>
+
+	<tr>
+		<td> dblclick - Çift Tıklama </td>
+		<td> <button id="b2">Çift Tıkla</button> </td>
+		<td> <p class="metin2"> &nbsp;</p></td>
+	</tr>
+
+	<tr>
+		<td> mouseenter - Fare ile Üzerine Gelme </td>
+		<td> <button id="b3"> İmleç Üzerimde</button> </td>
+		<td> <p class="metin3"> &nbsp; </p> </td>
+	</tr>
+
+	<tr>
+		<td> mouseleave - Fare Üzerinden Çekildiğinde </td>
+		<td> <button id="b4"> İmleç Üzerimden Çekildi</button> </td>
+		<td> <p class="metin4"> &nbsp; </p> </td>
+	</tr>
+
+	<tr>
+		<td> mousedown - Farenin Tuşuna Basıldığında </td>
+		<td> <button id="b5"> Fare Tuşuna Basıldı </button> </td>
+		<td> <p class="metin5"> &nbsp; </p> </td>
+	</tr>
+
+	<tr>
+		<td> mouseup - Farenin tuşu bırakıldığında </td>
+		<td> click - Tıklama </td>
+		<td> dblclick - Çift Tıklama </td>
+	</tr>
+
+	<tr>
+		<td> hover - mouseenter ve mouseleave olaylarının birleşimi gibi düşünülebilir. Hover olayına iki ayrı fonksiyon bağlanabilir. İlkinde fare üzerine geldiğinde yapılacak şeyler, ikincisinde ise fare terk ettiğinde yapılacak şeyler belirtilir. </td>
+		<td> click - Tıklama </td>
+		<td> dblclick - Çift Tıklama </td>
+	</tr>
+
+	<tr>
+		<td> ocus - Odaklanma yani bir form elemanına tıklayarak aktif hale getirme </td>
+		<td> click - Tıklama </td>
+		<td> dblclick - Çift Tıklama </td>
+	</tr>
+
+	<tr>
+		<td> blur - Aktif haldeki form elemanının terk edilmesi (denemek için önce içine sonra başka yere tıklayın) </td>
+		<td> click - Tıklama </td>
+		<td> dblclick - Çift Tıklama </td>
+	</tr>
+
+
+</tbody>
+</body>
+</html>

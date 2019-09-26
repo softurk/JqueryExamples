@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Examples 3</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+
+	<script>
+		
+		$(document).ready(function() {
+
+
+			$("#b1").click(function() {
+				var birinciPargraf = $("#metin1").html();
+				$("#metin2").html(birinciPargraf + "say hi ! ");
+
+			});
+		
+
+			
+		});
+
+
+
+	</script>
+
+
+	<style type="text/css">
+		
+			td { padding: 5px; }
+			.kutu{ height:100px; width:150px; padding:5px; display:none;}
+			#kutu2{ background-color:#0F6;}
+			#kutu1{	background-color:#F69;}
+	</style>
+
+</head>
+<body>
+
+	
+	<button id="b1"> text() METODU </button>
+
+	<p id="metin1"> Bu paragraftaki <strong>metin</strong>, sonraki <em> paragrafa</em> aktarılacak. <u> Ama text metodu kullandığımız </u> için <strong> düze metin </strong> olarak aktarılacak. </p>
+	<p id="metin2"></p>
+
+
+
+</body>
+</html>

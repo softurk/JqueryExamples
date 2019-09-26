@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+<title> Jquery Examples </title>	
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+
+		$(document).ready(function() {
+
+		$("#b1").mouseenter(function() {	//Fare ile üzerine gelinmesi olayıdır.
+			$("p").hide();
+		});
+		$("#b2").click(function() {
+			$(".yazi").hide();				//class
+		});
+		$("#b3").click(function() {
+			$("#yazi").hide();				//id
+		});
+		$("#b4").click(function() {
+			$(this).hide();					//beni gizle
+		});
+		$("#b5").dblclick(function() {		//tümünü gizle
+			$("*").hide();
+		});
+		$("#b6").click(function() {			//ilk p etiketini gizle
+			$("p:first").hide();
+		});
+
+
+		});
+
+
+</script>
+
+</head>
+
+<body>
+
+<h3> <a href="http://www.btDersleri.com">Tıkla ve Gizle </a> </h3>
+
+<p> Paragraf 1</p>
+<p id="yazi">Paragraf 2 </p>
+<p class="yazi">Paragraf 3 </p>
+<p class="yazi">Paragraf 4 </p>
+
+
+
+
+<h3> <a href="http://www.btDersleri.com">Liste 1 </a> </h3>
+
+<ul>
+
+	<li> Ders 1 </li>
+	<li> Ders 2 </li>
+	<li> Ders 3 </li>
+	<li> Ders 4 </li>
+
+</ul>
+
+<h3> <a href="http://www.btDersleri.com">Liste 2 (class uygulanmış) </a> </h3>
+
+<ul>
+
+	<li> Ders 1 </li>
+	<li> Ders 2 </li>
+	<li> Ders 3 </li>
+	<li> Ders 4 </li>
+
+</ul>
+
+<button id="b1"> Tüm p etiketlerini gizle </button> <br/>
+<button id="b2"> .yazi class'ı olan p etiketlerini gizle</button><br/>
+<button id="b3"> id'si yazi olan p etiketlerini gizle</button><br/>
+<button id="b4"> beni gizle</button>
+<button id="b5"> herşeyi gizle </button>
+<button id="b6"> ilk p etiketini gizle </button>
+
+
